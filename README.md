@@ -99,16 +99,16 @@ sh run_pretrain_ori.sh 0 pretrain_sunrgbd sunrgbd sunrgbd_v1_train_0.05.txt
 
 Please run:
 ```shell script
-sh run_pretrain.sh <GPU_ID> <LOG_DIR> <DATASET> <LABELED_LIST>
+sh run_pretrain.sh <GPU_ID> <LOG_DIR> <DATASET> <LABELED_LIST> <PRETRAIN_CKPT>
 ```
 
 For example:
 ```shell script
-sh run_pretrain.sh 0 pretrain_scannet scannet scannetv2_train_0.1.txt
+sh run_pretrain.sh 0 pretrain_scannet scannet scannetv2_train_0.1.txt ckpts/scan_0.1_pretrain_ori.tar
 ``` 
 
 ```shell script
-sh run_pretrain.sh 0 pretrain_sunrgbd sunrgbd sunrgbd_v1_train_0.05.txt
+sh run_pretrain.sh 0 pretrain_sunrgbd sunrgbd sunrgbd_v1_train_0.05.txt ckpts/sun_0.05_pretrain_ori.tar
 
 ```
 ## Training
