@@ -79,7 +79,23 @@ Please follow the instructions in `scannet/README.md`. using the download script
 ### SUNRGB-D
 Please follow the instructions in `sunrgbd/README.md`. 
 
-## Pre-training
+## Pre-training without resample
+
+Please run:
+```shell script
+sh run_pretrain_ori.sh <GPU_ID> <LOG_DIR> <DATASET> <LABELED_LIST>
+```
+
+For example:
+```shell script
+sh run_pretrain_ori.sh 0 pretrain_scannet scannet scannetv2_train_0.1.txt
+``` 
+
+```shell script
+sh run_pretrain_ori.sh 0 pretrain_sunrgbd sunrgbd sunrgbd_v1_train_0.05.txt
+``` 
+
+## Pre-training with resample (please use the pretrained model obtained above for training)
 
 Please run:
 ```shell script
@@ -93,7 +109,7 @@ sh run_pretrain.sh 0 pretrain_scannet scannet scannetv2_train_0.1.txt
 
 ```shell script
 sh run_pretrain.sh 0 pretrain_sunrgbd sunrgbd sunrgbd_v1_train_0.05.txt
-``` 
+
 
 ## Training
 
