@@ -110,9 +110,9 @@ sh run_pretrain.sh 0 pretrain_scannet scannet scannetv2_train_0.1.txt
 ```shell script
 sh run_pretrain.sh 0 pretrain_sunrgbd sunrgbd sunrgbd_v1_train_0.05.txt
 
-
+```
 ## Training
-
+```
 Please run:
 ```shell script
 sh run_train.sh <GPU_ID> <LOG_DIR> <DATASET> <LABELED_LIST> <PRETRAIN_CKPT>
